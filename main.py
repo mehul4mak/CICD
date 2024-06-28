@@ -16,7 +16,7 @@ class Calculator:
 
     # Addition
     def sum(self, a: int, b: int) -> int:
-        """Perform addition between two given number
+        """Perform addition between two given numbers.
 
         Parameters
         ----------
