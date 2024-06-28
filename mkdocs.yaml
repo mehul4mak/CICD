@@ -1,6 +1,6 @@
-site_name: Caclculator
+site_name: Calculator
 
-theme: "readthedocs"
+theme: "material"
 
 plugins:
   - search

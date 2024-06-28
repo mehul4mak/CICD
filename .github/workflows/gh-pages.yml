@@ -16,12 +16,13 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
+        python-version: '3.x'
 
     - name: Install dependencies
       run: |
         pip install mkdocs
         pip install mkdocs-material
+        pip install mkdocstrings
 
     - name: Build the site
       run: mkdocs build

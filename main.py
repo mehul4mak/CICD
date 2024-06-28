@@ -14,6 +14,7 @@ class Calculator:
     def __init__(self):
         pass
 
+    # Addition
     def sum(self, a: int, b: int) -> int:
         """Perform addition between two given number
 

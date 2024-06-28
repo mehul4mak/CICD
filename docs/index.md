@@ -1,3 +1,3 @@
-# Reference
+# Calculator
 
-::: main.Calculator
+::: main

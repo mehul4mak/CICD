@@ -5,3 +5,4 @@ pytest-cov
 numpy
 mkdocs
 mkdocstrings
+mkdocs-material
