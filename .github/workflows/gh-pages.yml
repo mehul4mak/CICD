@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -20,10 +23,9 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install mkdocs==1.6.0
-        pip install mkdocs-material==9.5.27
+        pip install mkdocs
+        pip install mkdocs-material
         pip install mkdocstrings[python]
-
 
     - name: Build the site
       run: mkdocs build
