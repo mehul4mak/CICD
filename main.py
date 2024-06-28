@@ -8,43 +8,44 @@ logger.setLevel(logging.INFO)
 
 
 class Calculator:
-    """_summary_"""
+    """Calculator in CLI which perform basic math operation.
+    Future: Scientific Calculation will be added."""
 
     def __init__(self):
-        """init for class"""
+        pass
 
     def sum(self, a: int, b: int) -> int:
-        """_summary_
+        """Perform addition between two given number
 
         Parameters
         ----------
         a : int
-            _description_
+            real integer number
         b : int
-            _description_
+            real integer number
 
         Returns
         -------
         int
-            _description_
+            real integer number
         """
         logger.info("Summing {a} and {b}")
         return a + b
 
     def substract(self, a: int, b: int) -> int:
-        """_summary_
+        """Perform subtraction from first given number with second given number.
 
         Parameters
         ----------
         a : int
-            _description_
+            real integer number
         b : int
-            _description_
+            real integer number
 
         Returns
         -------
         int
-            _description_
+            real integer number
         """
         logger.info("Substracing {a} and {b}")
         return a - b
