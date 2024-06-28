@@ -43,7 +43,7 @@ jobs:
 
     # - run: mkdocs gh-deploy --force
   # Deployment job
-  deploy:
+  deploy2:
     name: Deploy
     environment:
       name: github-pages
