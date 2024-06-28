@@ -31,9 +31,9 @@ jobs:
       run: mkdocs build
 
     - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: site
 
     # - name: Deploy to GitHub Pages
     #   uses: peaceiris/actions-gh-pages@v3
