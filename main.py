@@ -13,17 +13,20 @@ class Calculator:
     def __init__(self):
         """init for class"""
 
-        pass
-
     def sum(self, a: int, b: int) -> int:
         """_summary_
 
-        Args:
-            a (int): _description_
-            b (int): _description_
+        Parameters
+        ----------
+        a : int
+            _description_
+        b : int
+            _description_
 
-        Returns:
-            int: _description_
+        Returns
+        -------
+        int
+            _description_
         """
         logger.info("Summing {a} and {b}")
         return a + b
@@ -31,12 +34,17 @@ class Calculator:
     def substract(self, a: int, b: int) -> int:
         """_summary_
 
-        Args:
-            a (int): _description_
-            b (int): _description_
+        Parameters
+        ----------
+        a : int
+            _description_
+        b : int
+            _description_
 
-        Returns:
-            int: _description_
+        Returns
+        -------
+        int
+            _description_
         """
         logger.info("Substracing {a} and {b}")
         return a - b
@@ -49,7 +57,7 @@ if __name__ == "__main__":
         x = int(input("Enter a:"))
         y = int(input("Enter b:"))
 
-        op = str(input("Enter operation: "))
+        op = str(input("Enter operation: "))  # pylint: disable=C0103
 
         if op == "+":
             result = app.sum(x, y)
