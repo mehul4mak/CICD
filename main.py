@@ -40,3 +40,22 @@ class Calculator:
         """
         logger.info("Substracing {a} and {b}")
         return a - b
+
+
+if __name__ == "__main__":
+    app = Calculator()
+
+    while True:
+        x = int(input("Enter a:"))
+        y = int(input("Enter b:"))
+
+        op = str(input("Enter operation: "))
+
+        if op == "+":
+            result = app.sum(x, y)
+        elif op == "-":
+            result = app.substract(x, y)
+        else:
+            raise ValueError
+
+        print(f"Result {result}")
