@@ -2,7 +2,9 @@
 
 import logging
 
+
 logger = logging.getLogger(__name__)
+
 
 logger.setLevel(logging.INFO)
 
@@ -50,6 +52,18 @@ class Calculator:
         """
         logger.info("Substracing {a} and {b}")
         return a - b
+
+    def multiply(self, a: float, b: float) -> float:
+        """Perform multiplication between two decimal numbers.
+
+        Args:
+            a (float):
+            b (float):
+
+        Returns:
+            float: Multiplication result
+        """
+        return a * b
 
 
 if __name__ == "__main__":
