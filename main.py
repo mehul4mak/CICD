@@ -2,7 +2,6 @@
 
 import logging
 
-
 logger = logging.getLogger(__name__)
 
 
@@ -38,18 +37,27 @@ class Calculator:
     def substract(self, a: int, b: int) -> int:
         """Perform subtraction from first given number with second given number.
 
-        Parameters
-        ----------
-        a : int
-            real integer number
-        b : int
-            real integer number
+        Args:
+            a (int): real integer number
+            b (int): real integer number
 
-        Returns
-        -------
-        int
-            real integer number
+        Returns:
+            int: real integer number
         """
+        # """Perform subtraction from first given number with second given number.
+
+        # Parameters
+        # ----------
+        # a : int
+        #     real integer number
+        # b : int
+        #     real integer number
+
+        # Returns
+        # -------
+        # int
+        #     real integer number
+        # """
         logger.info("Substracing {a} and {b}")
         return a - b
 
